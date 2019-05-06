@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pop: MyString
+  RandB: MyString
+  alternative: MyString
+  country: MyString
+  rap: MyString
+  rock: MyString
+
+two:
+  pop: MyString
+  RandB: MyString
+  alternative: MyString
+  country: MyString
+  rap: MyString
+  rock: MyString

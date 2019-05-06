@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist: MyString
+  title: MyString
+  videoPath: MyString
+  audioPath: MyString
+  genre: one
+
+two:
+  artist: MyString
+  title: MyString
+  videoPath: MyString
+  audioPath: MyString
+  genre: two
