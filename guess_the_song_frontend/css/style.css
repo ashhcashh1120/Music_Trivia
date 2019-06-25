@@ -1,5 +1,9 @@
 body {
-   background-color: #aeddcd;
+   background-image: url("guess-the-song-background.jpg");
+   background-position: center center;
+   background-repeat:  no-repeat;
+   background-attachment: fixed;
+   background-size:  cover;
 }
 h1{
    justify-content: center;
@@ -29,6 +33,9 @@ button {
    display: flex;
    align-items: center;
    justify-content: center;
+   display: block;
+   max-width: 300px;
+   margin: auto;
    }
 button:hover {
    border-top-color: #b3521e;
@@ -36,8 +43,37 @@ button:hover {
    color: #cccccc;
 
    }
+
 button:active {
    border-top-color: #99971d;
    background: #99971d;
+   }
+
+   #title{
+     display: center;
+     margin: auto;
+     max-width: 300px;
+   }
+
+   img {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   audio{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   h3 {
+     color: #ffe066;
+     font-size: x-large;
 
    }
+   p{
+      color: #ffe066;
+      font-size: x-large;
+      }
+   
