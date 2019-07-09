@@ -42,7 +42,7 @@ let attempts = 3;
 
 
 function getSongs(){
-fetch('http://localhost:3000/genres')
+fetch('https://ashhmusictrivia.herokuapp.com/genres')
 .then(response => response.json())
 .then(data => {
   data.forEach((genre) =>{
@@ -69,7 +69,7 @@ getSongs()
               let body = document.getElementById('.main-container')
               body.innerHTML = ''
               let id = parseInt(event.target.dataset.id)
-                fetch(`http://localhost:3000/genres/${id}`)
+                fetch(`https://ashhmusictrivia.herokuapp.com/genres/${id}`)
                 .then(function(response){
                   return response.json();
                 })
@@ -128,13 +128,13 @@ getSongs()
       }
   })
   const getScoreboard = () => {
-    fetch(`http://localhost:3000/scoreboards`)
+    fetch(`https://ashhmusictrivia.herokuapp.com/scoreboards`)
     .then(res => res.json())
     .then(scoreList => {
       scoreList.forEach(score => {
-  
+
         // bottomTag.append(scoreLister(score))
-        
+
         bottomDiv.innerHTML += scoreLister(score)
         console.log(scoreLister(score))
       })
@@ -162,7 +162,7 @@ getSongs()
               if(attempts < 1){
                 alert(`GAME OVER, YOUR SCORE IS ${points}`)
                 let userName = window.prompt("Enter your name")
-                fetch('http://localhost:3000/scoreboards', {
+                fetch('https://ashhmusictrivia.herokuapp.com/scoreboards', {
                     method:'POST',
                     headers:{
                       'Content-Type': 'application/json'
