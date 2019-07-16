@@ -1,4 +1,4 @@
 class GenreSerializer < ActiveModel::Serializer
-  attributes :id, :name, :genre
+  attributes :id, :artist, :title, :audioPath
   has_many :songs
 end
